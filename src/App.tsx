@@ -1,55 +1,62 @@
-import * as React from "react";
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  Flex,
-} from "@chakra-ui/react";
+import { ChakraProvider, Text, Flex } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { Logo } from "./Logo";
 import { theme } from "./theme";
-console.log(theme);
+import { Home } from "./routes/home";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  BrowserRouter as Router,
+} from "react-router-dom";
+import { Gamer } from "./routes/gamer";
+import { AnimatedRoutes } from "./animated-routes";
+import { Link } from "./components/link";
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Flex
-      pos="fixed"
-      top={0}
-      left={0}
-      right={0}
-      h="60px"
-      px={3}
-      justify="space-between"
-      align="center"
-    >
-      <Text fontWeight="900" fontSize="3xl" letterSpacing="-0.8px">
-        ANDREW JAMES
-      </Text>
-      <ColorModeSwitcher justifySelf="flex-end" />
-    </Flex>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <Box />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/gamer",
+    element: <Gamer />,
+  },
+]);
+
+export const App = () => {
+  return (
+    <ChakraProvider theme={theme}>
+      <Router>
+        <Flex
+          pos="fixed"
+          top={0}
+          left={0}
+          right={0}
+          h="60px"
+          px={3}
+          justify="space-between"
+          align="center"
+        >
           <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
+            fontWeight="900"
+            fontSize="3xl"
+            letterSpacing="-0.8px"
+            to="/"
+            _hover={{ textDecor: "none" }}
           >
-            Learn Chakra
+            ANDREW JAMES
           </Link>
-        </VStack>
-      </Grid>
-    </Box>
-  </ChakraProvider>
-);
+          <ColorModeSwitcher justifySelf="flex-end" />
+        </Flex>
+        {/* <RouterProvider router={router} /> */}
+
+        {/* <AnimatePresence exitBeforeEnter>
+          <Switch>
+            <Route path="/" element={} />
+            <Route path="/gamer" element={<Gamer />} />
+          </Switch>
+        </AnimatePresence> */}
+        <AnimatedRoutes />
+      </Router>
+    </ChakraProvider>
+  );
+};
