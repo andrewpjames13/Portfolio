@@ -29,9 +29,20 @@ export const Gamer = () => (
         bgImage="/images/game-bg.jpg"
         backgroundSize="cover"
         backgroundPosition="center"
-        h={["50vh", null, "80vh"]}
+        py={24}
       >
-        <Image src="/images/gamer-hero.png" />
+        {/* <Image src="/images/gamer-hero.png" /> */}
+        <video
+          src="/video/gamer-preview.webm"
+          autoPlay
+          loop
+          style={{
+            width: "80vw",
+            maxWidth: "1500px",
+            filter: "drop-shadow(5px 5px 10px #000)",
+            borderRadius: "10px",
+          }}
+        />
       </Center>
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
