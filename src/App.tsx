@@ -12,6 +12,7 @@ import { Genesis } from "./routes/genisis";
 import { Arena } from "./routes/arena";
 import { TBR } from "./routes/tbr";
 import { AngelMd } from "./routes/angelmd";
+import { CartDriver } from "./routes/cart-driver";
 
 export const App = () => {
   const location = useLocation();
@@ -22,6 +23,7 @@ export const App = () => {
     { path: "/arena", element: <Arena /> },
     { path: "/the-born-readies", element: <TBR /> },
     { path: "/angelmd", element: <AngelMd /> },
+    { path: "/cart-driver", element: <CartDriver /> },
   ]);
 
   if (!element) return null;

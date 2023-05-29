@@ -9,8 +9,8 @@ export const ProjectOverview = ({
   skills,
   description,
 }: {
-  href: string;
-  linkText: string;
+  href?: string;
+  linkText?: string;
   title: string;
   skills: string[];
   description: string;
@@ -20,7 +20,7 @@ export const ProjectOverview = ({
       <Link
         fontSize="sm"
         fontWeight="900"
-        to={href}
+        to={href ?? ""}
         target="blank"
         mb={2}
         pos="relative"
