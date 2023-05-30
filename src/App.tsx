@@ -1,5 +1,4 @@
 import {
-  Box,
   ChakraProvider,
   Circle,
   Flex,
@@ -7,14 +6,13 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { theme } from "./theme";
 import { Home } from "./routes/home";
 import { useLocation, useRoutes } from "react-router-dom";
 import { Gamer } from "./routes/gamer";
 import { Link } from "./components/link";
 import { AnimatePresence } from "framer-motion";
-import { Fragment, cloneElement, useEffect } from "react";
+import { Fragment, cloneElement } from "react";
 import ScrollToTop from "./components/scroll-to-top";
 import { Genesis } from "./routes/genisis";
 import { Arena } from "./routes/arena";
@@ -83,7 +81,7 @@ export const App = () => {
       <Container>
         <Flex
           h="60px"
-          px={[6]}
+          px={[6, 0]}
           justify="space-between"
           align="center"
           w="full"
@@ -151,34 +149,36 @@ export const App = () => {
               })}
             </Flex>
           )}
-          <Flex
-            h="60px"
-            justify="space-between"
-            align="center"
-            w="full"
-            px={[6]}
-          >
-            <HStack spacing={6} w="full">
-              <Link
-                to="https://github.com/andrewpjames13"
-                target="blank"
+          {location.pathname === "/" && (
+            <Flex
+              h="60px"
+              justify="space-between"
+              align="center"
+              w="full"
+              px={[6, 0]}
+            >
+              <HStack spacing={6} w="full">
+                <Link
+                  to="https://github.com/andrewpjames13"
+                  target="blank"
+                  fontWeight="900"
+                >
+                  Github
+                </Link>
+                <Link
+                  to="https://linkedin.com/in/andrewpjames13"
+                  target="blank"
+                  fontWeight="900"
+                >
+                  LinkedIn
+                </Link>
+              </HStack>
+              <Text
                 fontWeight="900"
-              >
-                Github
-              </Link>
-              <Link
-                to="https://linkedin.com/in/andrewpjames13"
-                target="blank"
-                fontWeight="900"
-              >
-                LinkedIn
-              </Link>
-            </HStack>
-            <Text
-              fontWeight="900"
-              whiteSpace="nowrap"
-            >{`© ${new Date().getFullYear()} &RU DESIGN`}</Text>
-          </Flex>
+                whiteSpace="nowrap"
+              >{`© ${new Date().getFullYear()} &RU DESIGN`}</Text>
+            </Flex>
+          )}
         </VStack>
       </Container>
     </ChakraProvider>

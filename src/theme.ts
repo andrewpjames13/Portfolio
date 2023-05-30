@@ -10,6 +10,14 @@ export const theme = extendTheme({
         bg: mode("white", "gray.900")(props),
         lineHeight: "base",
       },
+      "::-moz-selection": {
+        color: mode("whiteAlpha.900", "gray.800")(props),
+        background: mode("gray.900", "white")(props),
+      },
+      "::selection": {
+        color: mode("whiteAlpha.900", "gray.800")(props),
+        background: mode("gray.900", "white")(props),
+      },
     }),
   },
 });
