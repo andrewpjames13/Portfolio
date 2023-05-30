@@ -28,36 +28,75 @@ export const projects = [
     src: "/images/gamer/Gamer.XYZ.webp",
     layoutId: "gamer",
     name: "Gamer.xyz",
+    skills: [
+      "Branding",
+      "Web Design",
+      "Frontend Development",
+      "Backend Development",
+    ],
   },
   {
     to: "/genesis",
     src: "/images/Genesis.jpg",
     layoutId: "genesis",
     name: "Genesis",
+    skills: [
+      "Branding",
+      "Web Design",
+      "Frontend Development",
+      "Motion Graphics",
+    ],
   },
   {
     to: "/arena",
     src: "/images/arena/Arena.webp",
     layoutId: "arena",
     name: "Arena",
+    skills: [
+      "Branding",
+      "Web Design",
+      "Frontend Development",
+      "Backend Development",
+    ],
   },
   {
     to: "/the-born-readies",
     src: "/images/TBR.jpg",
     layoutId: "tbr",
     name: "The Born Readies",
+    skills: [
+      "Branding",
+      "Web Design",
+      "Frontend Development",
+      "Illustration",
+      "Creative Direction",
+      "Art Direction",
+      "Motion Graphics",
+      "Video Production",
+      "Drumming",
+      "Songwriting",
+    ],
   },
   {
     to: "/angelmd",
     src: "/images/angelmd/AngelMD.webp",
     layoutId: "angelmd",
     name: "AngelMd",
+    skills: [
+      "Lead Developer",
+      "Component Library",
+      "Design System",
+      "Frontend Development",
+      "Backend Development",
+      "Atomic Design",
+    ],
   },
   {
     to: "/cart-driver",
     src: "/images/cart-driver/Cart-Driver.webp",
     layoutId: "cartdriver",
     name: "Cart-Driver",
+    skills: ["Web Design", "Web Development", "Illustration"],
   },
 ];
 
@@ -81,7 +120,7 @@ export const App = () => {
       <Container>
         <Flex
           h="60px"
-          px={[6, 0]}
+          px={6}
           justify="space-between"
           align="center"
           w="full"
@@ -155,7 +194,7 @@ export const App = () => {
               justify="space-between"
               align="center"
               w="full"
-              px={[6, 0]}
+              px={6}
             >
               <HStack spacing={6} w="full">
                 <Link

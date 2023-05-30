@@ -1,8 +1,8 @@
-import { Box, Center, Image, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Box, Center, Image } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
-import { Container } from "../components/container";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -13,12 +13,7 @@ export const Arena = () => (
         href="https://arena.gl"
         linkText="arena.gl"
         title="Arena"
-        skills={[
-          "Branding",
-          "Web Design",
-          "Frontend Development",
-          "Backend Development",
-        ]}
+        skills={projects.find((p) => p.to === "/arena")?.skills ?? []}
         description="I joined the Arena team to enhance and standardize the brand throughout the app, while also designing and implementing full-stack features. Additionally, I built a comprehensive component library to ensure consistency and efficiency in development."
       />
       <Center

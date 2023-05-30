@@ -10,10 +10,10 @@ export const Home = () => (
       <Center w="full">
         <Text
           textAlign="center"
-          fontSize={["5xl", "7xl"]}
+          fontSize={["4xl", "7xl"]}
           fontWeight="500"
           letterSpacing="-0.8px"
-          lineHeight={["3rem", "5rem"]}
+          lineHeight={["2.25rem", "5rem"]}
           maxW="1000px"
         >
           Andrew James is a designer, developer, and drummer based in Denver,

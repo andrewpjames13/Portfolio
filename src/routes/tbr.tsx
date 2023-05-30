@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
 import { Container } from "../components/container";
 import { Button } from "../components/button";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -17,18 +18,9 @@ export const TBR = () => (
         href="http://thebornreadies.rocks/"
         linkText="thebornreadies.rocks"
         title="THE BORN READIES"
-        skills={[
-          "Branding",
-          "Web Design",
-          "Frontend Development",
-          "Illustration",
-          "Creative Direction",
-          "Art Direction",
-          "Motion Graphics",
-          "Video Production",
-          "Drumming",
-          "Songwriting",
-        ]}
+        skills={
+          projects.find((p) => p.to === "/the-born-readies")?.skills ?? []
+        }
         description="The Born Readies are a rock band from Denver, CO. I designed and developed their website, as well as their logo, album art, and merchandise. I also produced and directed their music video for their single, 'Motorcycle Mania'. I am also the drummer and a songwriter for the band."
       />
       <Center bgColor="#a29160" h={["50vh", null, "80vh"]}>

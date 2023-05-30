@@ -3,6 +3,7 @@ import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
 import { Button } from "../components/button";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -13,14 +14,7 @@ export const AngelMd = () => (
         href="https://styleguide.andrewjamesdesign.com/"
         linkText="styleguide.angelmd.com"
         title="ANGELMD"
-        skills={[
-          "Lead Developer",
-          "Component Library",
-          "Design System",
-          "Frontend Development",
-          "Backend Development",
-          "Atomic Design",
-        ]}
+        skills={projects.find((p) => p.to === "/angelmd")?.skills ?? []}
         description="I led the development of AngelMD's React and React Native applications from scratch. I established a well-documented and scalable codebase with a strong focus on reusability through an atomic design-based component library. Working closely with the design team, I ensured alignment in design and development principles."
       />
       <Center

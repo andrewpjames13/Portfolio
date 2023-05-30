@@ -2,6 +2,7 @@ import { Box, Center, Image } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -10,7 +11,7 @@ export const CartDriver = () => (
     <MotionBox w="100%">
       <ProjectOverview
         title="CART-DRIVER"
-        skills={["Web Design", "Web Development", "Illustration"]}
+        skills={projects.find((p) => p.to === "/cart-driver")?.skills ?? []}
         description="I designed and developed the Cart Driver website, incorporating a custom CMS that allowed for easy content management and updates. Additionally, I created an illustration for their signage at the Rino location."
       />
       <Center

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
 import { Container } from "../components/container";
 import { Button } from "../components/button";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -17,12 +18,7 @@ export const Gamer = () => (
         href="https://gamer.xyz"
         linkText="gamer.xyz"
         title="GAMER.XYZ"
-        skills={[
-          "Branding",
-          "Web Design",
-          "Frontend Development",
-          "Backend Development",
-        ]}
+        skills={projects.find((p) => p.to === "/gamer")?.skills ?? []}
         description="I rebranded Arena to emphasize games and creators building engaged communities. This involved creating a new logo, updating the color palette, and redesigning the entire UI to reflect the new brand. Additionally, I implemented new features that strategically directed the product towards fostering community engagement."
       />
       <Center

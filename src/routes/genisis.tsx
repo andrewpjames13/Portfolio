@@ -3,6 +3,7 @@ import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
 import { Button } from "../components/button";
+import { projects } from "../App";
 
 const MotionBox = motion(Box);
 
@@ -13,12 +14,7 @@ export const Genesis = () => (
         href="https://mint.arena.gl"
         linkText="mint.arena.gl"
         title="GENESIS"
-        skills={[
-          "Branding",
-          "Web Design",
-          "Frontend Development",
-          "Motion Graphics",
-        ]}
+        skills={projects.find((p) => p.to === "/genesis")?.skills ?? []}
         description="This project was to create an immersive web experience fot the Genesis NFT project that would captivate users the same way that playing a video game would."
       />
       <Center
