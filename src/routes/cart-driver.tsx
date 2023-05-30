@@ -2,7 +2,6 @@ import { Box, Center, Image } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
-import { Button } from "../components/button";
 
 const MotionBox = motion(Box);
 
@@ -15,11 +14,11 @@ export const CartDriver = () => (
         description="I designed and developed the Cart Driver website, incorporating a custom CMS that allowed for easy content management and updates. Additionally, I created an illustration for their signage at the Rino location."
       />
       <Center
-        bgImage="/images/cart-driver-bg.jpg"
+        bgImage="/images/cart-driver/cart-driver-bg.webp"
         backgroundSize="cover"
         backgroundPosition="center"
       >
-        <Image src="/images/cart-driver-hero.png" />
+        <Image src="/images/cart-driver/cart-driver-hero.webp" />
       </Center>
 
       {/* <Container py={12} px={[6]}>

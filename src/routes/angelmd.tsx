@@ -24,12 +24,12 @@ export const AngelMd = () => (
         description="I led the development of AngelMD's React and React Native applications from scratch. I established a well-documented and scalable codebase with a strong focus on reusability through an atomic design-based component library. Working closely with the design team, I ensured alignment in design and development principles."
       />
       <Center
-        bgImage="/images/angelmd-back.jpg"
+        bgImage="/images/angelmd/angelmd-back.webp"
         backgroundSize="cover"
         backgroundPosition="center"
         // h={["50vh", null, "80vh"]}
       >
-        <Image src="/images/angelmd-hero.png" />
+        <Image src="/images/angelmd/angelmd-hero.webp" />
       </Center>
       <Center py={12}>
         <Button

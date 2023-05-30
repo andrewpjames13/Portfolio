@@ -50,9 +50,9 @@ export const Gamer = () => (
             <Image src="/images/gamer-logos.png" />
             <Image src="/images/gamer-font-and-color.png" />
           </SimpleGrid>
-          <Image src="/images/gamer-dark.png" w="full" />
+          <Image src="/images/gamer/gamer-dark.webp" w="full" />
           <Image src="/images/gamer-light.png" w="full" />
-          <Image src="/images/gamer-pages.png" w="full" />
+          <Image src="/images/gamer/gamer-pages.webp" w="full" />
         </VStack>
       </Container>
       <Center py={12}>

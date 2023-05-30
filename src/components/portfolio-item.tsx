@@ -16,7 +16,7 @@ export const PortfolioItem = ({
   return (
     <Link
       to={to}
-      fontSize="2xl"
+      // fontSize="2xl"
       // onClick={() => {
       //   sessionStorage.setItem(
       //     "scrollPosition",
@@ -24,6 +24,7 @@ export const PortfolioItem = ({
       //   );
       // }}
       role="group"
+      w="full"
     >
       <MotionCenter layoutId={layoutId} pos="relative" overflow="hidden">
         <Image

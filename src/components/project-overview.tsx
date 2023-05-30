@@ -16,7 +16,7 @@ export const ProjectOverview = ({
   description: string;
 }) => {
   return (
-    <Center w="full" minH="60vh" flexDir="column" px={6}>
+    <Center w="full" minH="50vh" flexDir="column" px={6}>
       <Link
         fontSize="sm"
         fontWeight="900"

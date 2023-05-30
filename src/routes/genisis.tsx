@@ -2,7 +2,6 @@ import { Box, Center, Image, SimpleGrid, VStack } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
-import { Container } from "../components/container";
 import { Button } from "../components/button";
 
 const MotionBox = motion(Box);
@@ -23,7 +22,7 @@ export const Genesis = () => (
         description="This project was to create an immersive web experience fot the Genesis NFT project that would captivate users the same way that playing a video game would."
       />
       <Center
-        bgImage="/images/genesis-bg.jpg"
+        bgImage="/images/genesis/genesis-bg.webp"
         backgroundSize="cover"
         backgroundPosition="center"
         py={24}

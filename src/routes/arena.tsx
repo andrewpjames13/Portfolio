@@ -22,12 +22,12 @@ export const Arena = () => (
         description="I joined the Arena team to enhance and standardize the brand throughout the app, while also designing and implementing full-stack features. Additionally, I built a comprehensive component library to ensure consistency and efficiency in development."
       />
       <Center
-        bgImage="/images/arena-bg.jpg"
+        bgImage="/images/arena/arena-bg.webp"
         backgroundSize="cover"
         backgroundPosition="center"
         // h={["50vh", null, "80vh"]}
       >
-        <Image src="/images/arena-hero.png" />
+        <Image src="/images/arena/arena-hero.webp" />
       </Center>
       {/* <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>

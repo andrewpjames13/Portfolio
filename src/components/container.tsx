@@ -8,8 +8,10 @@ export const Container = ({
   ...rest
 }: PropsWithChildren & FlexProps) => {
   return (
-    <Flex justify="center" {...rest}>
-      <Flex maxW={MAX_WIDTH}>{children}</Flex>
+    <Flex justify="center" w="full" {...rest}>
+      <Flex maxW={MAX_WIDTH} w="full">
+        {children}
+      </Flex>
     </Flex>
   );
 };
