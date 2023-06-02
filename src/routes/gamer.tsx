@@ -22,12 +22,12 @@ export const Gamer = () => (
         description="I rebranded Arena to emphasize games and creators building engaged communities. This involved creating a new logo, updating the color palette, and redesigning the entire UI to reflect the new brand. Additionally, I implemented new features that strategically directed the product towards fostering community engagement."
       />
       <Center
-        bgImage="/images/game-bg.jpg"
+        bgImage="/images/gamer/gamer-bg.webp"
         backgroundSize="cover"
         backgroundPosition="center"
         py={24}
       >
-        {/* <Image src="/images/gamer-hero.png" /> */}
+        {/* <Image src="/images/gamer/gamer-hero.webp" /> */}
         <video
           src="/video/gamer-preview.webm"
           autoPlay
@@ -43,11 +43,11 @@ export const Gamer = () => (
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
           <SimpleGrid columns={[1, 2]}>
-            <Image src="/images/gamer-logos.png" />
-            <Image src="/images/gamer-font-and-color.png" />
+            <Image src="/images/gamer/gamer-logos.webp" />
+            <Image src="/images/gamer/gamer-font-and-color.webp" />
           </SimpleGrid>
           <Image src="/images/gamer/gamer-dark.webp" w="full" />
-          <Image src="/images/gamer-light.png" w="full" />
+          <Image src="/images/gamer/gamer-light.webp" w="full" />
           <Image src="/images/gamer/gamer-pages.webp" w="full" />
         </VStack>
       </Container>

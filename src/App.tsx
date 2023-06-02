@@ -21,6 +21,7 @@ import { AngelMd } from "./routes/angelmd";
 import { CartDriver } from "./routes/cart-driver";
 import { Container } from "./components/container";
 import { LogoIcon } from "./components/logo";
+import { RawRx } from "./routes/rawrx";
 
 export const projects = [
   {
@@ -37,7 +38,7 @@ export const projects = [
   },
   {
     to: "/genesis",
-    src: "/images/Genesis.jpg",
+    src: "/images/genesis/Genesis.webp",
     layoutId: "genesis",
     name: "Genesis",
     skills: [
@@ -61,7 +62,7 @@ export const projects = [
   },
   {
     to: "/the-born-readies",
-    src: "/images/TBR.jpg",
+    src: "/images/tbr/TBR.webp",
     layoutId: "tbr",
     name: "The Born Readies",
     skills: [
@@ -98,6 +99,31 @@ export const projects = [
     name: "Cart-Driver",
     skills: ["Web Design", "Web Development", "Illustration"],
   },
+  {
+    to: "/rawrx",
+    src: "/images/rawrx/rawrx.webp",
+    layoutId: "rawrx",
+    name: "Raw Rx",
+    skills: [
+      "Branding",
+      "Logo Design",
+      "Product Design",
+      "Business Card Design",
+    ],
+  },
+  {
+    to: "/octa",
+    src: "/images/octa/octa-hero.jpg",
+    layoutId: "octa",
+    name: "Octa",
+    skills: [
+      "Branding",
+      "Packaging Design",
+      "Trade Show Booth Design",
+      "Web Design",
+      "Marketing Materials",
+    ],
+  },
 ];
 
 export const App = () => {
@@ -110,6 +136,7 @@ export const App = () => {
     { path: "/the-born-readies", element: <TBR /> },
     { path: "/angelmd", element: <AngelMd /> },
     { path: "/cart-driver", element: <CartDriver /> },
+    { path: "/rawrx", element: <RawRx /> },
   ]);
 
   if (!element) return null;

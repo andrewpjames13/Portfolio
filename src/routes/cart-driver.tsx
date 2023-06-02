@@ -1,4 +1,4 @@
-import { Box, Center, Image } from "@chakra-ui/react";
+import { Box, Center, Image, SimpleGrid } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
@@ -19,20 +19,17 @@ export const CartDriver = () => (
         backgroundSize="cover"
         backgroundPosition="center"
       >
-        <Image src="/images/cart-driver/cart-driver-hero.webp" />
+        <Image src="/images/cart-driver/cart-driver-hero-noback.webp" />
       </Center>
-
-      {/* <Container py={12} px={[6]}>
-        <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, 2]}>
-            <Image src="/images/gamer-logos.png" />
-            <Image src="/images/gamer-font-and-color.png" />
-          </SimpleGrid>
-          <Image src="/images/gamer-dark.png" w="full" />
-          <Image src="/images/gamer-light.png" w="full" />
-          <Image src="/images/gamer-pages.png" w="full" />
-        </VStack>
-      </Container> */}
+      <Center
+        bgImage="/images/cart-driver/cart-driver-hero.jpg"
+        backgroundSize="cover"
+        backgroundPosition="center"
+      />
+      <SimpleGrid columns={[1, 2]}>
+        <Image src="/images/cart-driver/intro-cart-driver.webp" />
+        <Image src="/images/cart-driver/cart-driver-hero.webp" />
+      </SimpleGrid>
     </MotionBox>
   </AnimatedPageWrapper>
 );

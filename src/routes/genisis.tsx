@@ -1,4 +1,4 @@
-import { Box, Center, Image, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
@@ -36,17 +36,6 @@ export const Genesis = () => (
           }}
         />
       </Center>
-      {/* <Container py={12} px={[6]}>
-        <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, 2]}>
-            <Image src="/images/gamer-logos.png" />
-            <Image src="/images/gamer-font-and-color.png" />
-          </SimpleGrid>
-          <Image src="/images/gamer-dark.png" w="full" />
-          <Image src="/images/gamer-light.png" w="full" />
-          <Image src="/images/gamer-pages.png" w="full" />
-        </VStack>
-      </Container> */}
       <Center py={12}>
         <Button onClick={() => window.open("https://mint.arena.gl")}>
           Checkout GENESIS

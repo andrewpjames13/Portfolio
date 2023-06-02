@@ -21,7 +21,6 @@ export const AngelMd = () => (
         bgImage="/images/angelmd/angelmd-back.webp"
         backgroundSize="cover"
         backgroundPosition="center"
-        // h={["50vh", null, "80vh"]}
       >
         <Image src="/images/angelmd/angelmd-hero.webp" />
       </Center>
@@ -34,17 +33,6 @@ export const AngelMd = () => (
           GO TO STYLEGUIDE
         </Button>
       </Center>
-      {/* <Container py={12} px={[6]}>
-        <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, 2]}>
-            <Image src="/images/gamer-logos.png" />
-            <Image src="/images/gamer-font-and-color.png" />
-          </SimpleGrid>
-          <Image src="/images/gamer-dark.png" w="full" />
-          <Image src="/images/gamer-light.png" w="full" />
-          <Image src="/images/gamer-pages.png" w="full" />
-        </VStack>
-      </Container> */}
     </MotionBox>
   </AnimatedPageWrapper>
 );

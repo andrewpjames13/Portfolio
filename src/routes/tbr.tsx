@@ -24,19 +24,19 @@ export const TBR = () => (
         description="The Born Readies are a rock band from Denver, CO. I designed and developed their website, as well as their logo, album art, and merchandise. I also produced and directed their music video for their single, 'Motorcycle Mania'. I am also the drummer and a songwriter for the band."
       />
       <Center bgColor="#a29160" h={["50vh", null, "80vh"]}>
-        <Image src="/images/tbr/tbr-hero.png" />
+        <Image src="/images/tbr/tbr-hero.webp" />
       </Center>
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
           <SimpleGrid columns={[2]} spacing={12}>
-            <Image src="/images/tbr/first-drum-head.jpeg" />
-            <Image src="/images/tbr/second-drum-head.jpeg" />
+            <Image src="/images/tbr/first-drum-head.webp" />
+            <Image src="/images/tbr/second-drum-head.webp" />
           </SimpleGrid>
           <SimpleGrid columns={[4]} spacing={12}>
-            <Image src="/images/tbr/WCS-Patch-color.png" />
-            <Image src="/images/tbr/outtasightsquare.jpg" />
-            <Image src="/images/tbr/motorcyclemaniasquarepatch.jpg" />
-            <Image src="/images/tbr/Boogie-Patch.jpg" />
+            <Image src="/images/tbr/WCS-Patch-color.webp" />
+            <Image src="/images/tbr/outtasightsquare.webp" />
+            <Image src="/images/tbr/motorcyclemaniasquarepatch.webp" />
+            <Image src="/images/tbr/Boogie-Patch.webp" />
           </SimpleGrid>
         </VStack>
       </Container>
@@ -58,10 +58,10 @@ export const TBR = () => (
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
           <SimpleGrid columns={[2]} spacing={12}>
-            <Image src="/images/tbr/WCS-T-Shirt.jpg" />
-            <Image src="/images/tbr/Outta-Sight-T-Shirt-Black.jpg" />
-            <Image src="/images/tbr/MM-T-Shirt.jpg" />
-            <Image src="/images/tbr/Boogie-Man-T-Shirt.jpg" />
+            <Image src="/images/tbr/WCS-T-Shirt.webp" />
+            <Image src="/images/tbr/Outta-Sight-T-Shirt-Black.webp" />
+            <Image src="/images/tbr/MM-T-Shirt.webp" />
+            <Image src="/images/tbr/Boogie-Man-T-Shirt.webp" />
           </SimpleGrid>
         </VStack>
       </Container>
