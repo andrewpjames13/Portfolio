@@ -153,9 +153,9 @@ export const App = () => {
           w="full"
           pos="relative"
         >
-          <Link to="/" fontWeight="900">
+          {/* <Link to="/" fontWeight="900">
             Work
-          </Link>
+          </Link> */}
           <Link
             fontWeight="900"
             fontSize="3xl"
@@ -169,9 +169,9 @@ export const App = () => {
             {/* ANDREW JAMES */}
             <LogoIcon boxSize="40px" />
           </Link>
-          <Link fontWeight="900" to="/">
+          {/* <Link fontWeight="900" to="/">
             Contact
-          </Link>
+          </Link> */}
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
         </Flex>
       </Container>
@@ -224,6 +224,14 @@ export const App = () => {
               px={6}
             >
               <HStack spacing={6} w="full">
+                {/* <Link
+                  fontWeight="900"
+                  fontSize="3xl"
+                  to="/"
+                  _hover={{ textDecor: "none" }}
+                >
+                  <LogoIcon boxSize="30px" />
+                </Link> */}
                 <Link
                   to="https://github.com/andrewpjames13"
                   target="blank"
@@ -237,6 +245,12 @@ export const App = () => {
                   fontWeight="900"
                 >
                   LinkedIn
+                </Link>
+                <Link
+                  to="mailto:andrewpjames87@gmail.com?subject=Hey%20Andrew%20I'm%20Interested%20In%20Doing%20Something%20Cool!"
+                  fontWeight="900"
+                >
+                  Email
                 </Link>
               </HStack>
               <Text

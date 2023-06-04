@@ -38,10 +38,10 @@ export const RawRx = () => (
       </Container>
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[2]} spacing={12}>
-            <Image src="/images/rawrx/RawRx-logo-proposal_Page_2.jpg" />
-            <Image src="/images/rawrx/RawRx-logo-proposal_Page_3.jpg" />
-            <Image src="/images/rawrx/RawRx-logo-proposal_Page_4.jpg" />
+          <SimpleGrid columns={[1, null, 2]} spacing={12}>
+            <Image src="/images/rawrx/RawRx-logo-proposal_Page_2.webp" />
+            <Image src="/images/rawrx/RawRx-logo-proposal_Page_3.webp" />
+            <Image src="/images/rawrx/RawRx-logo-proposal_Page_4.webp" />
             <Image src="/images/rawrx/RawRx-logo-proposal_Page_5.webp" />
           </SimpleGrid>
         </VStack>
@@ -58,7 +58,7 @@ export const RawRx = () => (
       </Container>
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[2]} spacing={12}>
+          <SimpleGrid columns={[1, null, 2]} spacing={12}>
             <Image src="/images/rawrx/RawRx-logo-r2_Page_2.webp" />
             <Image src="/images/rawrx/RawRx-logo-r2_Page_3.webp" />
           </SimpleGrid>
@@ -71,12 +71,12 @@ export const RawRx = () => (
           letterSpacing="-0.8px"
           lineHeight={["2.25rem", "5rem"]}
         >
-          BUSINESS CARD DESIGN
+          BUSINESS CARDS
         </Text>
       </Container>
       <Container py={12} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[2]} spacing={12}>
+          <SimpleGrid columns={[1, null, 2]} spacing={12}>
             <Image src="/images/rawrx/rawFlattenedProposal_Page_2.webp" />
             <Image src="/images/rawrx/rawFlattenedProposal_Page_3.webp" />
             <Image src="/images/rawrx/rawFlattenedProposal_Page_4.webp" />
