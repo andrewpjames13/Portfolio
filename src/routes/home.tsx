@@ -55,7 +55,7 @@ export const Home = () => (
         </Text>
       </VStack> */}
     </Container>
-    <Container py={6} px={[0, null, 6]}>
+    <Container py={6} px={[0, null, 6]} minH="100vh">
       <SimpleGrid columns={[1, null, 2]}>
         {projects.map((item, i) => (
           // <AnimateInView key={item.to} delay={i % 2 === 0 ? 0 : 0.05} y={0}>
