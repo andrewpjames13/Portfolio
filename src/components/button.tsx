@@ -5,6 +5,7 @@ export const Button = (props: ButtonProps) => {
       bg="black"
       color="white"
       size="lg"
+      rounded="none"
       _hover={{ opacity: 0.8 }}
       textTransform={"uppercase"}
       {...props}

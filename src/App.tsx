@@ -22,6 +22,7 @@ import { CartDriver } from "./routes/cart-driver";
 import { Container } from "./components/container";
 import { LogoIcon } from "./components/logo";
 import { RawRx } from "./routes/rawrx";
+import { Octa } from "./routes/octa";
 
 export const projects = [
   {
@@ -113,7 +114,7 @@ export const projects = [
   },
   {
     to: "/octa",
-    src: "/images/octa/octa-hero.jpg",
+    src: "/images/octa/octa-hero.png",
     layoutId: "octa",
     name: "Octa",
     skills: [
@@ -137,6 +138,7 @@ export const App = () => {
     { path: "/angelmd", element: <AngelMd /> },
     { path: "/cart-driver", element: <CartDriver /> },
     { path: "/rawrx", element: <RawRx /> },
+    { path: "/octa", element: <Octa /> },
   ]);
 
   if (!element) return null;
