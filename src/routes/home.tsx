@@ -4,12 +4,25 @@ import { PortfolioItem } from "../components/portfolio-item";
 import { Container } from "../components/container";
 import { projects } from "../App";
 import { AnimateInView } from "../components/animate-in-view";
+import { motion } from "framer-motion";
+
+const MotionText = motion(Text);
+
+const textVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, y: 0 },
+  exit: { opacity: 0 },
+};
 
 export const Home = () => (
   <AnimatedPageWrapper>
     <Container minH={["50vh", "50vh"]} p={3} px={[6, 0]} align="center">
-      <Center w="full">
-        <Text
+      <Center w="full" flexDir="column">
+        <MotionText
+          animate="visible"
+          initial="hidden"
+          exit="exit"
+          variants={textVariants}
           textAlign="center"
           fontSize={["4xl", "7xl"]}
           fontWeight="500"
@@ -17,9 +30,36 @@ export const Home = () => (
           lineHeight={["2.25rem", "5rem"]}
           maxW="1000px"
         >
-          Andrew James is a designer, developer, and drummer based in Denver,
-          Colorado.
-        </Text>
+          Andrew James is a designer,
+        </MotionText>
+        <MotionText
+          animate="visible"
+          initial="hidden"
+          exit="exit"
+          variants={textVariants}
+          textAlign="center"
+          fontSize={["4xl", "7xl"]}
+          fontWeight="500"
+          letterSpacing="-0.8px"
+          lineHeight={["2.25rem", "5rem"]}
+          maxW="1000px"
+        >
+          developer, and drummer based in.
+        </MotionText>
+        <MotionText
+          animate="visible"
+          initial="hidden"
+          exit="exit"
+          variants={textVariants}
+          textAlign="center"
+          fontSize={["4xl", "7xl"]}
+          fontWeight="500"
+          letterSpacing="-0.8px"
+          lineHeight={["2.25rem", "5rem"]}
+          maxW="1000px"
+        >
+          Denver, Colorado.
+        </MotionText>
       </Center>
       {/* <VStack align="flex-start" spacing={0}>
         <Text
@@ -67,7 +107,7 @@ export const Home = () => (
         </SimpleGrid>
       </Container>
     </AnimateInView>
-    <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
+    {/* <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
       <Text
         fontSize={["4xl", "4xl"]}
         fontWeight="900"
@@ -76,8 +116,8 @@ export const Home = () => (
       >
         JUST FOR FUN
       </Text>
-    </Container>
-    <Container pb={6} px={[0, null, 6]}>
+    </Container> */}
+    {/* <Container pb={6} px={[0, null, 6]}>
       <SimpleGrid columns={[1, null, 2]} w="full">
         <iframe
           src="https://codesandbox.io/embed/reverent-platform-s8lvh1?fontsize=14&hidenavigation=1&theme=dark"
@@ -153,6 +193,6 @@ export const Home = () => (
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         />
       </SimpleGrid>
-    </Container>
+    </Container> */}
   </AnimatedPageWrapper>
 );

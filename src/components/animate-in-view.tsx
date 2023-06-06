@@ -1,4 +1,4 @@
-import { Box, BoxProps, useMediaQuery } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
 import { Variants, motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import type { FC } from "react";
@@ -24,24 +24,22 @@ export const AnimateInView: FC<React.PropsWithChildren<Props>> = ({
   y = 50,
   ...rest
 }) => {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
-
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
   useEffect(() => {
-    if (inView && !isMobile) {
+    if (inView) {
       controls.start("visible");
-    } else if (!stayMounted && !isMobile) {
+    } else if (!stayMounted) {
       controls.start("hidden");
     }
-  }, [controls, inView, stayMounted, isMobile]);
+  }, [controls, inView, stayMounted]);
 
   return (
     <MotionBox
       ref={ref}
       animate={controls}
-      initial={isMobile ? "visible" : "hidden"}
+      initial="hidden"
       exit="exit"
       variants={{
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay } },
