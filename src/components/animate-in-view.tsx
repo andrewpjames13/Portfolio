@@ -41,7 +41,7 @@ export const AnimateInView: FC<React.PropsWithChildren<Props>> = ({
     <MotionBox
       ref={ref}
       animate={controls}
-      initial="hidden"
+      initial={isMobile ? "visible" : "hidden"}
       exit="exit"
       variants={{
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay } },
