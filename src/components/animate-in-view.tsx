@@ -40,7 +40,7 @@ export const AnimateInView: FC<React.PropsWithChildren<Props>> = ({
       ref={ref}
       animate={controls}
       initial="hidden"
-      exit="hidden"
+      // exit="hidden"
       variants={{
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay } },
         hidden: { opacity: 0, y },
