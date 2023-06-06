@@ -114,7 +114,7 @@ export const projects = [
   },
   {
     to: "/octa",
-    src: "/images/octa/octa-hero.png",
+    src: "/images/octa/octa-hero.webp",
     layoutId: "octa",
     name: "Octa",
     skills: [

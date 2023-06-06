@@ -21,11 +21,6 @@ export const CartDriver = () => (
       >
         <Image src="/images/cart-driver/cart-driver-hero-noback.webp" />
       </Center>
-      <Center
-        bgImage="/images/cart-driver/cart-driver-hero.jpg"
-        backgroundSize="cover"
-        backgroundPosition="center"
-      />
       <SimpleGrid columns={[1, 2]}>
         <Image src="/images/cart-driver/intro-cart-driver.webp" />
         <Image src="/images/cart-driver/cart-driver-hero.webp" />

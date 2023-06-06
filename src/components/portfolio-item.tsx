@@ -1,4 +1,4 @@
-import { Center, Flex, Image, Text } from "@chakra-ui/react";
+import { Center, Flex, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "./link";
 import { projects } from "../App";
@@ -13,6 +13,8 @@ export const PortfolioItem = ({
   name,
   skills,
 }: (typeof projects)[0]) => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Link
       to={to}
@@ -31,7 +33,7 @@ export const PortfolioItem = ({
         <Image
           src={src}
           transition="transform ease-in-out 300ms"
-          _groupHover={{ transform: "scale(1.1)" }}
+          _groupHover={isMobile ? {} : { transform: "scale(1.1)" }}
         />
       </MotionCenter>
       <Center
@@ -44,7 +46,7 @@ export const PortfolioItem = ({
         bg="blackAlpha.800"
         opacity={0}
         transition="opacity ease-in-out 300ms"
-        _groupHover={{ opacity: 1 }}
+        _groupHover={isMobile ? {} : { opacity: 1 }}
       >
         <Flex flexDir="column" px={6}>
           <Text
@@ -61,6 +63,18 @@ export const PortfolioItem = ({
             {name}
           </Text>
           <HorizontalDotSeparator skills={skills ?? []} color="white" />
+          <Text
+            color="white"
+            fontSize="sm"
+            textAlign="center"
+            // transition="transform ease-in-out 300ms"
+            textTransform="uppercase"
+            textDecor="underline"
+            // transform={`translateY(10px)`}
+            // _groupHover={{ transform: "translateY(0)" }}
+          >
+            View Project
+          </Text>
         </Flex>
       </Center>
     </Link>

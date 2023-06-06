@@ -29,7 +29,8 @@ export const Gamer = () => (
       >
         {/* <Image src="/images/gamer/gamer-hero.webp" /> */}
         <video
-          src="/video/gamer-preview.webm"
+          // poster="/images/gamer/gamer-hero.webp"
+          src="/video/gamer-preview.mp4"
           autoPlay
           loop
           style={{
@@ -48,7 +49,7 @@ export const Gamer = () => (
           </SimpleGrid>
           <Image src="/images/gamer/gamer-dark.webp" w="full" />
           <Image src="/images/gamer/gamer-light.webp" w="full" />
-          <Image src="/images/gamer/gamer-pages.webp" w="full" />
+          {/* <Image src="/images/gamer/gamer-pages.webp" w="full" /> */}
         </VStack>
       </Container>
       <Center py={12}>

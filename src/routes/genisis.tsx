@@ -25,7 +25,7 @@ export const Genesis = () => (
       >
         {/* <Image src="/images/genesis-hero.png" /> */}
         <video
-          src="/video/genisis-preview.webm"
+          src="/video/genisis-preview.mp4"
           autoPlay
           loop
           style={{

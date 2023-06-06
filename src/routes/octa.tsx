@@ -27,20 +27,20 @@ export const Octa = () => (
         <Grid templateRows="repeat(2, 1fr)" templateColumns="repeat(2, 1fr)">
           <GridItem
             as={Image}
-            src="/images/octa/spider.jpg"
+            src="/images/octa/spider.webp"
             rowSpan={1}
             colSpan={1}
             transform="rotate(180deg)"
           />
           <GridItem
             as={Image}
-            src="/images/octa/spider-back.jpg"
+            src="/images/octa/spider-back.webp"
             rowSpan={2}
             colSpan={1}
           />
           <GridItem
             as={Image}
-            src="/images/octa/spider-open.jpg"
+            src="/images/octa/spider-open.webp"
             rowSpan={1}
             colSpan={1}
           />
