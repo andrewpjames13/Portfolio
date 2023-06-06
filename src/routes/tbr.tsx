@@ -59,7 +59,7 @@ export const TBR = () => (
         <VStack flexDir="column" spacing={12}>
           <SimpleGrid columns={[2]} spacing={12}>
             <Image src="/images/tbr/WCS-T-Shirt.webp" />
-            <Image src="/images/tbr/outta-sight-t-shirt-black.webp" />
+            <Image src="/images/tbr/outta-sight-t-shirt-black-new.webp" />
             <Image src="/images/tbr/MM-T-Shirt.webp" />
             <Image src="/images/tbr/Boogie-Man-T-Shirt.webp" />
           </SimpleGrid>
