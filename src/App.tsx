@@ -127,6 +127,51 @@ export const projects = [
   },
 ];
 
+export const codeExamples = [
+  {
+    to: "https://codesandbox.io/s/jquery-sass-knob-s8lvh1",
+    src: "/images/code-examples/knob.webp",
+    layoutId: "knob",
+    name: "Knob",
+    skills: ["SASS", "jQuery", "UI Design"],
+  },
+  {
+    to: "https://codesandbox.io/s/glitch-image-react-framer-motion-2lfpyl",
+    src: "/images/code-examples/glitch.webp",
+    layoutId: "glitch",
+    name: "Glitch Image",
+    skills: ["Javascript", "Framer-Motion", "React", "UI Design"],
+  },
+  {
+    to: "https://codesandbox.io/s/prezi-style-nav-react-framer-motion-o4h79o",
+    src: "/images/code-examples/nav.webp",
+    layoutId: "nav",
+    name: "Scroll Nav",
+    skills: ["Javascript", "Framer-Motion", "React", "UI Design"],
+  },
+  {
+    to: "https://codesandbox.io/s/typewriter-component-react-framer-motion-fct3y6",
+    src: "/images/code-examples/typewriter.webp",
+    layoutId: "typewriter",
+    name: "Typewriter",
+    skills: ["Javascript", "Framer-Motion", "React", "UI Design"],
+  },
+  {
+    to: "https://codesandbox.io/s/jquery-metronome-rcbwbe",
+    src: "/images/code-examples/detrignome.webp",
+    layoutId: "Metronome",
+    name: "Metronome",
+    skills: ["SASS", "jQuery", "UI Design"],
+  },
+  {
+    to: "https://codesandbox.io/s/draggable-video-component-react-framer-motion-1kjlvy",
+    src: "/images/code-examples/drag-video.webp",
+    layoutId: "drag-video",
+    name: "Draggable Video",
+    skills: ["Javascript", "Framer-Motion", "React", "UI Design"],
+  },
+];
+
 export const App = () => {
   const location = useLocation();
   const element = useRoutes([

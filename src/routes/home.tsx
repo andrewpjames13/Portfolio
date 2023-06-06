@@ -2,7 +2,7 @@ import { Text, VStack, SimpleGrid, Center, Flex } from "@chakra-ui/react";
 import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { PortfolioItem } from "../components/portfolio-item";
 import { Container } from "../components/container";
-import { projects } from "../App";
+import { codeExamples, projects } from "../App";
 import { AnimateInView } from "../components/animate-in-view";
 import { motion } from "framer-motion";
 
@@ -107,7 +107,7 @@ export const Home = () => (
         </SimpleGrid>
       </Container>
     </AnimateInView>
-    {/* <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
+    <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
       <Text
         fontSize={["4xl", "4xl"]}
         fontWeight="900"
@@ -116,10 +116,13 @@ export const Home = () => (
       >
         JUST FOR FUN
       </Text>
-    </Container> */}
-    {/* <Container pb={6} px={[0, null, 6]}>
+    </Container>
+    <Container pb={6} px={[0, null, 6]}>
       <SimpleGrid columns={[1, null, 2]} w="full">
-        <iframe
+        {codeExamples.map((item, i) => (
+          <PortfolioItem key={item.to} {...item} />
+        ))}
+        {/* <iframe
           src="https://codesandbox.io/embed/reverent-platform-s8lvh1?fontsize=14&hidenavigation=1&theme=dark"
           style={{
             width: "100%",
@@ -191,8 +194,8 @@ export const Home = () => (
           title="Draggable Video Component - React - Framer Motion"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        />
+        /> */}
       </SimpleGrid>
-    </Container> */}
+    </Container>
   </AnimatedPageWrapper>
 );

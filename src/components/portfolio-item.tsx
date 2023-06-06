@@ -28,6 +28,7 @@ export const PortfolioItem = ({
       role="group"
       w="full"
       pos="relative"
+      target={to.startsWith("http") ? "_blank" : undefined}
     >
       <MotionCenter layoutId={layoutId} pos="relative" overflow="hidden">
         <Image
