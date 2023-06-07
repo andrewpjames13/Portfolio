@@ -26,7 +26,7 @@ export const RawRx = () => (
       >
         <Image src="/images/rawrx/raw-logo.webp" />
       </Center>
-      <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
+      <Container pt={6} px={[5, null, 6]} pb={[3, null, 0]}>
         <Text
           fontSize={["4xl", "4xl"]}
           fontWeight="900"
@@ -36,9 +36,9 @@ export const RawRx = () => (
           LOGO PROPOSAL
         </Text>
       </Container>
-      <Container py={12} px={[6]}>
+      <Container pb={12} pt={[2, null, 12]} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, null, 2]} spacing={12}>
+          <SimpleGrid columns={[1, null, 2]} spacing={[6, null, 12]}>
             <Image src="/images/rawrx/RawRx-logo-proposal_Page_2.webp" />
             <Image src="/images/rawrx/RawRx-logo-proposal_Page_3.webp" />
             <Image src="/images/rawrx/RawRx-logo-proposal_Page_4.webp" />
@@ -46,7 +46,7 @@ export const RawRx = () => (
           </SimpleGrid>
         </VStack>
       </Container>
-      <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
+      <Container pt={6} px={[5, null, 6]} pb={[3, null, 0]}>
         <Text
           fontSize={["4xl", "4xl"]}
           fontWeight="900"
@@ -56,15 +56,15 @@ export const RawRx = () => (
           LOGO ITERATION
         </Text>
       </Container>
-      <Container py={12} px={[6]}>
+      <Container pb={12} pt={[2, null, 12]} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, null, 2]} spacing={12}>
+          <SimpleGrid columns={[1, null, 2]} spacing={[6, null, 12]}>
             <Image src="/images/rawrx/RawRx-logo-r2_Page_2.webp" />
             <Image src="/images/rawrx/RawRx-logo-r2_Page_3.webp" />
           </SimpleGrid>
         </VStack>
       </Container>
-      <Container pt={6} px={[2, null, 6]} pb={[3, null, 0]}>
+      <Container pt={6} px={[5, null, 6]} pb={[3, null, 0]}>
         <Text
           fontSize={["4xl", "4xl"]}
           fontWeight="900"
@@ -74,9 +74,9 @@ export const RawRx = () => (
           BUSINESS CARDS
         </Text>
       </Container>
-      <Container py={12} px={[6]}>
+      <Container pb={12} pt={[2, null, 12]} px={[6]}>
         <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[1, null, 2]} spacing={12}>
+          <SimpleGrid columns={[1, null, 2]} spacing={[6, null, 12]}>
             <Image src="/images/rawrx/rawFlattenedProposal_Page_2.webp" />
             <Image src="/images/rawrx/rawFlattenedProposal_Page_3.webp" />
             <Image src="/images/rawrx/rawFlattenedProposal_Page_4.webp" />

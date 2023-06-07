@@ -46,7 +46,7 @@ export const Octa = () => (
           />
         </Grid>
       </Container>
-      <Container py={12} px={[6]}>
+      <Container pt={[0, null, 12]} pb={12} px={[6]}>
         <Grid templateRows="repeat(2, 1fr)" templateColumns="repeat(2, 1fr)">
           <GridItem
             as={Image}

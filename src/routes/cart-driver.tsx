@@ -3,6 +3,7 @@ import { AnimatedPageWrapper } from "../components/animated-page-wrapper";
 import { motion } from "framer-motion";
 import { ProjectOverview } from "../components/project-overview";
 import { projects } from "../App";
+import { Container } from "../components/container";
 
 const MotionBox = motion(Box);
 
@@ -21,10 +22,12 @@ export const CartDriver = () => (
       >
         <Image src="/images/cart-driver/cart-driver-hero-noback.webp" />
       </Center>
-      <SimpleGrid columns={[1, 2]}>
-        <Image src="/images/cart-driver/intro-cart-driver.webp" />
-        <Image src="/images/cart-driver/cart-driver-hero.webp" />
-      </SimpleGrid>
+      <Container py={[6, null, 12]}>
+        <SimpleGrid columns={[1, 2]}>
+          <Image src="/images/cart-driver/intro-cart-driver.webp" />
+          <Image src="/images/cart-driver/cart-driver-hero.webp" />
+        </SimpleGrid>
+      </Container>
     </MotionBox>
   </AnimatedPageWrapper>
 );

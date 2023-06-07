@@ -27,12 +27,12 @@ export const TBR = () => (
         <Image src="/images/tbr/tbr-hero.webp" />
       </Center>
       <Container py={12} px={[6]}>
-        <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[2]} spacing={12}>
+        <VStack flexDir="column" spacing={[6, null, 12]}>
+          <SimpleGrid columns={[1, null, 2]} spacing={[6, null, 12]}>
             <Image src="/images/tbr/first-drum-head.webp" />
             <Image src="/images/tbr/second-drum-head.webp" />
           </SimpleGrid>
-          <SimpleGrid columns={[4]} spacing={12}>
+          <SimpleGrid columns={[2, null, 4]} spacing={[6, null, 12]}>
             <Image src="/images/tbr/WCS-Patch-color.webp" />
             <Image src="/images/tbr/outtasightsquare.webp" />
             <Image src="/images/tbr/motorcyclemaniasquarepatch.webp" />
@@ -56,8 +56,8 @@ export const TBR = () => (
         />
       </Center>
       <Container py={12} px={[6]}>
-        <VStack flexDir="column" spacing={12}>
-          <SimpleGrid columns={[2]} spacing={12}>
+        <VStack flexDir="column" spacing={[6, null, 12]}>
+          <SimpleGrid columns={[1, null, 2]} spacing={[6, null, 12]}>
             <Image src="/images/tbr/WCS-T-Shirt.webp" />
             <Image src="/images/tbr/outta-sight-t-shirt-black-new.webp" />
             <Image src="/images/tbr/MM-T-Shirt.webp" />

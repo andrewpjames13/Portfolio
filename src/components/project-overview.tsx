@@ -17,7 +17,14 @@ export const ProjectOverview = ({
   description: string;
 }) => {
   return (
-    <Center w="full" minH="50vh" flexDir="column" px={6}>
+    <Center
+      w="full"
+      minH="50vh"
+      flexDir="column"
+      px={6}
+      py={12}
+      textAlign="center"
+    >
       <Link
         fontSize="sm"
         fontWeight="900"
