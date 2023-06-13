@@ -74,7 +74,7 @@ export const PortfolioItem = ({
             // transform={`translateY(10px)`}
             // _groupHover={{ transform: "translateY(0)" }}
           >
-            View Project
+            {to.includes("http") ? "Go To Sandbox" : "Checkout Project"}
           </Text>
         </Flex>
       </Center>
