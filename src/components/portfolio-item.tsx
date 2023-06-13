@@ -49,7 +49,7 @@ export const PortfolioItem = ({
         transition="opacity ease-in-out 300ms"
         _groupHover={isMobile ? {} : { opacity: 1 }}
       >
-        <Flex flexDir="column" px={6}>
+        <Flex flexDir="column" px={9}>
           <Text
             color="white"
             fontSize="4xl"
