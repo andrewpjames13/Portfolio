@@ -14,8 +14,8 @@ export const Genesis = () => {
     <AnimatedPageWrapper>
       <MotionBox w="100%">
         <ProjectOverview
-          href="https://mint.arena.gl"
-          linkText="mint.arena.gl"
+          href="https://mint.gamer.xyz"
+          linkText="mint.gamer.xyz"
           title="GENESIS"
           skills={projects.find((p) => p.to === "/genesis")?.skills ?? []}
           description="This project was to create an immersive web experience fot the Genesis NFT project that would captivate users the same way that playing a video game would."
@@ -41,7 +41,7 @@ export const Genesis = () => {
           />
         </Center>
         <Center py={12}>
-          <Button onClick={() => window.open("https://mint.arena.gl")}>
+          <Button onClick={() => window.open("https://mint.gamer.xyz")}>
             Checkout GENESIS
           </Button>
         </Center>
