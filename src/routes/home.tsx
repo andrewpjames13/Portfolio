@@ -18,7 +18,7 @@ export const Home = () => (
           lineHeight={["2.25rem", "5rem"]}
           maxW="1000px"
         >
-          Andrew James is a designer, developer, and drummer based in Denver,
+          Andrew James is a developer, designer, and drummer based in Denver,
           Colorado.
         </Text>
       </Center>
