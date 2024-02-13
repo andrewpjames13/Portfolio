@@ -22,9 +22,26 @@ import { CartDriver } from "./routes/cart-driver";
 import { Container } from "./components/container";
 import { LogoIcon } from "./components/logo";
 import { RawRx } from "./routes/rawrx";
-import { Octa } from "./routes/octa";
+import { Outbox } from "./routes/outbox";
 
 export const projects = [
+  {
+    to: "/outbox",
+    src: "/images/outbox/outbox.jpg",
+    layoutId: "outbox",
+    name: "Outbox",
+    skills: [
+      "Frontend Development",
+      "Backend Development",
+      "React",
+      "NextJS",
+      "Node",
+      "TypeScript",
+      "Branding",
+      "Web Design",
+      "UI/UX",
+    ],
+  },
   {
     to: "/gamer",
     src: "/images/gamer/Gamer.XYZ.webp",
@@ -125,19 +142,19 @@ export const projects = [
       "Business Card Design",
     ],
   },
-  {
-    to: "/octa",
-    src: "/images/octa/octa-hero.webp",
-    layoutId: "octa",
-    name: "Octa",
-    skills: [
-      "Branding",
-      "Packaging Design",
-      "Trade Show Booth Design",
-      "Web Design",
-      "Marketing Materials",
-    ],
-  },
+  // {
+  //   to: "/octa",
+  //   src: "/images/octa/octa-hero.webp",
+  //   layoutId: "octa",
+  //   name: "Octa",
+  //   skills: [
+  //     "Branding",
+  //     "Packaging Design",
+  //     "Trade Show Booth Design",
+  //     "Web Design",
+  //     "Marketing Materials",
+  //   ],
+  // },
 ];
 
 export const codeExamples = [
@@ -189,6 +206,7 @@ export const App = () => {
   const location = useLocation();
   const element = useRoutes([
     { path: "/", element: <Home /> },
+    { path: "/outbox", element: <Outbox /> },
     { path: "/gamer", element: <Gamer /> },
     { path: "/genesis", element: <Genesis /> },
     { path: "/arena", element: <Arena /> },
@@ -196,7 +214,7 @@ export const App = () => {
     { path: "/angelmd", element: <AngelMd /> },
     { path: "/cart-driver", element: <CartDriver /> },
     { path: "/rawrx", element: <RawRx /> },
-    { path: "/octa", element: <Octa /> },
+    // { path: "/octa", element: <Octa /> },
   ]);
 
   if (!element) return null;
