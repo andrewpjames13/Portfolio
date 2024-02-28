@@ -23,8 +23,23 @@ import { Container } from "./components/container";
 import { LogoIcon } from "./components/logo";
 import { RawRx } from "./routes/rawrx";
 import { Outbox } from "./routes/outbox";
+import { Farworld } from "./routes/farworld";
+import { Octa } from "./routes/octa";
 
 export const projects = [
+  {
+    to: "/farworld",
+    src: "/images/farworld/farworld.jpg",
+    layoutId: "farworld",
+    name: "Farworld",
+    skills: [
+      "Frontend Development",
+      "NextJS",
+      "TypeScript",
+      "Web Design",
+      "UI/UX",
+    ],
+  },
   {
     to: "/outbox",
     src: "/images/outbox/outbox.jpg",
@@ -142,19 +157,19 @@ export const projects = [
       "Business Card Design",
     ],
   },
-  // {
-  //   to: "/octa",
-  //   src: "/images/octa/octa-hero.webp",
-  //   layoutId: "octa",
-  //   name: "Octa",
-  //   skills: [
-  //     "Branding",
-  //     "Packaging Design",
-  //     "Trade Show Booth Design",
-  //     "Web Design",
-  //     "Marketing Materials",
-  //   ],
-  // },
+  {
+    to: "/octa",
+    src: "/images/octa/octa-hero.webp",
+    layoutId: "octa",
+    name: "Octa",
+    skills: [
+      "Branding",
+      "Packaging Design",
+      "Trade Show Booth Design",
+      "Web Design",
+      "Marketing Materials",
+    ],
+  },
 ];
 
 export const codeExamples = [
@@ -206,6 +221,7 @@ export const App = () => {
   const location = useLocation();
   const element = useRoutes([
     { path: "/", element: <Home /> },
+    { path: "/farworld", element: <Farworld /> },
     { path: "/outbox", element: <Outbox /> },
     { path: "/gamer", element: <Gamer /> },
     { path: "/genesis", element: <Genesis /> },
@@ -214,7 +230,7 @@ export const App = () => {
     { path: "/angelmd", element: <AngelMd /> },
     { path: "/cart-driver", element: <CartDriver /> },
     { path: "/rawrx", element: <RawRx /> },
-    // { path: "/octa", element: <Octa /> },
+    { path: "/octa", element: <Octa /> },
   ]);
 
   if (!element) return null;

@@ -29,7 +29,7 @@ export const Outbox = () => {
           href="https://outbox.xyz"
           linkText="outbox.xyz"
           title="OUTBOX"
-          skills={projects.find((p) => p.to === "/gamer")?.skills ?? []}
+          skills={projects.find((p) => p.to === "/outbox")?.skills ?? []}
           description="Outbox is a passion project I co-created with friends, addresses the challenge of accessing and leveraging the expertise of individuals with large followings. It's a platform where users can easily sign up, pay to ask questions, or subscribe to get unlimited questions answered. My contributions include branding, web design and frontend coding."
         />
         <Center
