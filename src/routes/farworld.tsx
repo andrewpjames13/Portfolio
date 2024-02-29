@@ -19,7 +19,7 @@ export const Farworld = () => {
           linkText="farworld.gg"
           title="Farworld"
           skills={projects.find((p) => p.to === "/farworld")?.skills ?? []}
-          description="Outbox is a passion project I co-created with friends, addresses the challenge of accessing and leveraging the expertise of individuals with large followings. It's a platform where users can easily sign up, pay to ask questions, or subscribe to get unlimited questions answered. My contributions include branding, web design and frontend coding."
+          description='Farworld is a mysterious world full of mysterious monsters. I did the web design, contributed to the front-end development and created the rare holographic effect for each creature, know as "Farmons"'
         />
         <Center
           bgImage="/images/farworld/background-gradient.jpg"
