@@ -1,6 +1,5 @@
-import { Text, Center, HStack, Circle, Flex } from "@chakra-ui/react";
+import { Text, Center, CenterProps } from "@chakra-ui/react";
 import { Link } from "../components/link";
-import { Fragment } from "react";
 import { HorizontalDotSeparator } from "./hoizontal-dot-separator";
 
 export const ProjectOverview = ({
@@ -9,12 +8,14 @@ export const ProjectOverview = ({
   title,
   skills,
   description,
+  centerProps,
 }: {
   href?: string;
   linkText?: string;
   title: string;
   skills: string[];
   description: string;
+  centerProps?: CenterProps;
 }) => {
   return (
     <Center
@@ -24,6 +25,7 @@ export const ProjectOverview = ({
       px={6}
       py={12}
       textAlign="center"
+      {...centerProps}
     >
       <Link
         fontSize="sm"

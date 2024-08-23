@@ -25,6 +25,8 @@ import { RawRx } from "./routes/rawrx";
 import { Outbox } from "./routes/outbox";
 import { Farworld } from "./routes/farworld";
 import { Octa } from "./routes/octa";
+import { Drums } from "./routes/drums";
+import { Practice } from "./routes/practice";
 
 export const projects = [
   {
@@ -231,6 +233,8 @@ export const App = () => {
     { path: "/cart-driver", element: <CartDriver /> },
     { path: "/rawrx", element: <RawRx /> },
     { path: "/octa", element: <Octa /> },
+    { path: "/drums", element: <Drums /> },
+    { path: "/drums/practice", element: <Practice /> },
   ]);
 
   if (!element) return null;
