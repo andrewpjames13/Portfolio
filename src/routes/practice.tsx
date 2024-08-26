@@ -10,7 +10,7 @@ const MotionBox = motion(Box);
 const singlesNoAccents = [
   {
     name: "Triplets",
-    description: "RLR LRL RLR LRL",
+    description: "RLR RLR RLR RLR",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=12&Tempo=80&Measures=1&H=|x--x--x--x--|&S=|OOOOOOOOOOOO|&K=|o-----o-----|",
   },
   {
