@@ -15,8 +15,8 @@ const singlesNoAccents = [
   },
   {
     name: "16th Notes",
-    description: "RLRL LRLR RLRL LRLR",
-    href: "eSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|oooooooooooooooo|&K=|o-------o-------|",
+    description: "RLRL RLRL RLRL RLRL",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|oooooooooooooooo|&K=|o-------o-------|",
   },
   {
     name: "Groupings of Threes",
@@ -72,6 +72,22 @@ const singlesNoAccents = [
   },
 ];
 
+const singlesWithAccents = [
+  {
+    name: "Six",
+    description: "RLRL R\u0306L\u0306",
+    subDescription: "LRLR L\u0306R\u0306",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ggggO-O-ggggO-O-|&K=|o-------o-------|",
+  },
+  {
+    name: "Ten",
+    description: "RLRL RLRL R\u0306L\u0306 RLRL RLRL R\u0306L\u0306 RLRL RLRL",
+    subDescription:
+      "LRLR LRLR L\u0306R\u0306 LRLR LRLR L\u0306R\u0306 LRLR LRLR",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|ggggggggO-O-gggg|ggggO-O-gggggggg|&K=|o-------o-------|o-------o-------|",
+  },
+];
+
 export const Practice = () => {
   return (
     <AnimatedPageWrapper>
@@ -86,7 +102,7 @@ export const Practice = () => {
           centerProps={{ bg: "black", color: "white" }}
         />
 
-        <Box p={12} pb={0}>
+        <Box p={12} pl={[6, 12]} pb={0}>
           <Text fontSize="3xl" fontWeight="900">
             Singles No Accents
           </Text>
@@ -97,6 +113,64 @@ export const Practice = () => {
           gap={6}
         >
           {singlesNoAccents.map((item) => (
+            <Link
+              to={item.href}
+              target="blank"
+              _hover={{ textDecoration: "underline", cursor: "pointer" }}
+              role="group"
+            >
+              <Flex
+                w="full"
+                bg="black"
+                minH="25vh"
+                flexDir="column"
+                justifyContent="space-between"
+                p={6}
+              >
+                <Box>
+                  <Text
+                    color="white"
+                    fontSize="2xl"
+                    fontWeight="900"
+                    _groupHover={{ textDecoration: "underline" }}
+                  >
+                    {item.name}
+                  </Text>
+                  <Text color="white">{item.description}</Text>
+                  {item.subDescription && (
+                    <Text color="white">{item.subDescription}</Text>
+                  )}
+                </Box>
+                <Flex
+                  alignItems="center"
+                  w="full"
+                  justifyContent="flex-end"
+                  gap={1}
+                >
+                  <Text
+                    color="white"
+                    _groupHover={{ textDecoration: "underline" }}
+                  >
+                    Groove Scribe
+                  </Text>
+                  <Icon as={MdChevronRight} color="white" boxSize={5} />
+                </Flex>
+              </Flex>
+            </Link>
+          ))}
+        </Grid>
+
+        <Box p={12} pl={[6, 12]} pb={0}>
+          <Text fontSize="3xl" fontWeight="900">
+            Singles With Accents
+          </Text>
+        </Box>
+        <Grid
+          p={[6, 12]}
+          templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]}
+          gap={6}
+        >
+          {singlesWithAccents.map((item) => (
             <Link
               to={item.href}
               target="blank"
