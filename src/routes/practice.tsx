@@ -10,64 +10,64 @@ const MotionBox = motion(Box);
 const singlesNoAccents = [
   {
     name: "Triplets",
-    description: "RLR RLR RLR RLR",
+    description: "rlr lrl rlr lrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=12&Tempo=80&Measures=1&H=|x--x--x--x--|&S=|OOOOOOOOOOOO|&K=|o-----o-----|",
   },
   {
     name: "16th Notes",
-    description: "RLRL RLRL RLRL RLRL",
+    description: "rlrl rlrl rlrl rlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|oooooooooooooooo|&K=|o-------o-------|",
   },
   {
     name: "Groupings of Threes",
-    description: "RLR LRL RLR LRL",
+    description: "rlr lrl rlr lrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ooo-ooo-ooo-ooo-|&K=|o-------o-------|",
   },
   {
     name: "Groupings of Fives",
-    description: "RLRLR LRLRL RLRLR LRLRL RLRLR L",
-    subDescription: "LRLRL RLRLR LRLRL RLRLR LRLRL R",
+    description: "rlrlr lrlrl rlrlr lrlrl rlrlr l",
+    subDescription: "lrlrl rlrlr lrlrl rlrlr lrlrl r",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|OOOOO-OOOOO-OOOO|O-OOOOO-OOOOO---|&K=|o-------o-------|o-------o-------|",
   },
   {
     name: "Groupings of Sevens",
-    description: "RLRLRLR LRLRLRL",
+    description: "rlrlrlr lrlrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ooooooo-ooooooo-|&K=|o-------o-------|",
   },
   {
     name: "Groupings of Elevens",
-    description: "RLRLRLRLRLR LRLRLRLRLRL",
+    description: "rlrlrlrlrlr lrlrlrlrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=4&H=|x---x---x---x---|x---x---x---x---|x---x---x---x---|x---x---x---x---|&S=|OOOOOOOOOOO-OOOO|OOOOOOO-OOOOOOOO|OOO-OOOOOOOOOOO-|OOOOOOOOOOO-O---|&K=|o-------o-------|o-------o-------|o-------o-------|o-------o-------|",
   },
   {
     name: "Groupings of Fifteens",
-    description: "RLRLRLRLRLRLRLR LRLRLRLRLRLRLRL",
+    description: "rlrlrlrlrlrlrlr lrlrlrlrlrlrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=4&H=|x---x---x---x---|x---x---x---x---|x---x---x---x---|x---x---x---x---|&S=|OOOOOOOOOOOOO-OOOO|OOOOOOOOOOOOO-OOOO|OOOOOOOOOOOOO-OOOO|OOOOOOOOOOOOO-O---|&K=|o-------o-------|o-------o-------|o-------o-------|o-------o-------|",
   },
   {
     name: "Displaced Groupings of Threes",
-    description: "R LRL RLR LRL RL",
+    description: "r lrl rlr lrl rl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-OOO-OOO-OOO-OO|&K=|o-------o-------|",
   },
   {
     name: "Displaced Groupings of Fives",
-    description: "R LRLRL RLRLR LRLRL RLRLR LRLRL",
+    description: "r lrlrl rlrlr lrlrl rlrlr lrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|O-OOOOO-OOOOO-OO|OOO-OOOOO-OOOOO-|&K=|o-------o-------|o-------o-------|",
   },
   {
     name: "Displaced Groupings of Sevens",
-    description: "R LRLRLRL RLRLRL",
+    description: "r lrlrlrl rlrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-OOOOOOO-OOOOOO|&K=|o-------o-------|",
   },
   {
     name: "Displaced Groupings of Elevens",
     description:
-      "R LRLRLRLRLRL RLRLRLRLRLR LRLRLRLRLRL RLRLRLRLRLR LRLRLRLRLRL",
+      "r lrlrlrlrlrl rlrlrlrlrlr lrlrlrlrlrl rlrlrlrlrlr lrlrlrlrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=4&H=|x---x---x---x---|x---x---x---x---|x---x---x---x---|x---x---x---x---|&S=|O-OOOOOOOOOOO-OO|OOOOOOOOO-OOOOOO|OOOOO-OOOOOOOOOO|O-OOOOOOOOOOO-O-|&K=|o-------o-------|o-------o-------|o-------o-------|o-------o-------|",
   },
   {
     name: "Displaced Groupings of Fifteens",
-    description: "R LRLRLRLRLRLRLR L RLRLRLRLRLRLRL",
+    description: "r lrlrlrlrlrlrlrl l rlrlrlrlrlrlrlr",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-OOOOOOOOOOOOOO|&K=|o-------o-------|",
   },
 ];
@@ -75,15 +75,14 @@ const singlesNoAccents = [
 const singlesWithAccents = [
   {
     name: "Six",
-    description: "RLRL R\u0306L\u0306",
-    subDescription: "LRLR L\u0306R\u0306",
+    description: "rlrl RL",
+    subDescription: "lrlr LR",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ggggO-O-ggggO-O-|&K=|o-------o-------|",
   },
   {
     name: "Ten",
-    description: "RLRL RLRL R\u0306L\u0306 RLRL RLRL R\u0306L\u0306 RLRL RLRL",
-    subDescription:
-      "LRLR LRLR L\u0306R\u0306 LRLR LRLR L\u0306R\u0306 LRLR LRLR",
+    description: "rlrl rlrl RL rlrl rlrl RL rlrl rlrl",
+    subDescription: "lrlr lrlr LR lrlr lrlr LR lrlr lrlr",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|ggggggggO-O-gggg|ggggO-O-gggggggg|&K=|o-------o-------|o-------o-------|",
   },
 ];
