@@ -25,8 +25,8 @@ const singlesNoAccents = [
   },
   {
     name: "Groupings of Fives",
-    description: "rlrlr lrlrl rlrlr lrlrl rlrlr l",
-    subDescription: "lrlrl rlrlr lrlrl rlrlr lrlrl r",
+    description: "rlrlr lrlrl rlrlr lrlrl rlrlr",
+    subDescription: "lrlrl rlrlr lrlrl rlrlr lrlrl",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|OOOOO-OOOOO-OOOO|O-OOOOO-OOOOO---|&K=|o-------o-------|o-------o-------|",
   },
   {
@@ -75,15 +75,51 @@ const singlesNoAccents = [
 const singlesWithAccents = [
   {
     name: "Six",
-    description: "rlrl RL",
-    subDescription: "lrlr LR",
+    description: "rlrl R L",
+    subDescription: "lrlr L R",
     href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ggggO-O-ggggO-O-|&K=|o-------o-------|",
   },
   {
     name: "Ten",
-    description: "rlrl rlrl RL rlrl rlrl RL rlrl rlrl",
-    subDescription: "lrlr lrlr LR lrlr lrlr LR lrlr lrlr",
-    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=2&H=|x---x---x---x---|x---x---x---x---|&S=|ggggggggO-O-gggg|ggggO-O-gggggggg|&K=|o-------o-------|o-------o-------|",
+    description: "rlrl rlrl R L rlrl rlrl RL rlrl rlrl RL rlrl rlrl RL",
+    subDescription: "lrlr lrlr L R lrlr lrlr L R lrlr lrlr LR lrlr lrlr LR",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=3&H=|x---x---x---x---|x---x---x---x---|x---x---x---x---|&S=|ggggggggO-O-gggg|ggggO-O-gggggggg|O-O-ggggggggO-O-|&K=|o-------o-------|o-------o-------|o-------o-------|",
+  },
+  {
+    name: "Twelve",
+    description: "rlrl rlrl R L R L",
+    subDescription: "lrlr lrlr L R L R",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ggggggggO-O-O-O-|&K=|o-------o-------|",
+  },
+  {
+    name: "Fourteen",
+    description: "rlrl rlrl rlrl R L",
+    subDescription: "lrlr lrlr lrlr L R",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|ggggggggO-O-O-O-|&K=|o-------o-------|",
+  },
+  {
+    name: "Displaced Groupings of Six",
+    description: "R lrlrL",
+    subDescription: "L rlrlR",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-ggggO-O-ggggO-|&K=|o-------o-------|",
+  },
+  {
+    name: "Displaced Groupings of Ten",
+    description: "R lrlr lrlr L",
+    subDescription: "L rlrl rlrl R",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=3&H=|x---x---x---x---|x---x---x---x---|x---x---x---x---|&S=|O-ggggggggO-O-gg|ggggggO-O-gggggg|ggO-O-ggggggggO-|&K=|o-------o-------|o-------o-------|o-------o-------|",
+  },
+  {
+    name: "Displaced Groupings of Twelve",
+    description: "R lrlr lrlr L R L",
+    subDescription: "L rlrl rlrl R L R",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-ggggggggO-O-O-|&K=|o-------o-------|",
+  },
+  {
+    name: "Displaced Groupings of Fourteen",
+    description: "R lrlr lrlr lrlrl L",
+    subDescription: "L rlrl rlrl rlrl R",
+    href: "https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x---x---x---x---|&S=|O-ggggggggggggO-|&K=|o-------o-------|",
   },
 ];
 
