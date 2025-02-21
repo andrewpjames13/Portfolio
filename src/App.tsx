@@ -27,6 +27,7 @@ import { Farworld } from "./routes/farworld";
 import { Octa } from "./routes/octa";
 import { Drums } from "./routes/drums";
 import { Practice } from "./routes/practice";
+import { NoiseBackground } from "./components/noise";
 
 export const projects = [
   {
@@ -147,31 +148,31 @@ export const projects = [
     name: "Cart-Driver",
     skills: ["Web Development", "React", "Web Design", "Illustration"],
   },
-  {
-    to: "/rawrx",
-    src: "/images/rawrx/rawrx.webp",
-    layoutId: "rawrx",
-    name: "Raw Rx",
-    skills: [
-      "Branding",
-      "Logo Design",
-      "Product Design",
-      "Business Card Design",
-    ],
-  },
-  {
-    to: "/octa",
-    src: "/images/octa/octa-hero.webp",
-    layoutId: "octa",
-    name: "Octa",
-    skills: [
-      "Branding",
-      "Packaging Design",
-      "Trade Show Booth Design",
-      "Web Design",
-      "Marketing Materials",
-    ],
-  },
+  // {
+  //   to: "/rawrx",
+  //   src: "/images/rawrx/rawrx.webp",
+  //   layoutId: "rawrx",
+  //   name: "Raw Rx",
+  //   skills: [
+  //     "Branding",
+  //     "Logo Design",
+  //     "Product Design",
+  //     "Business Card Design",
+  //   ],
+  // },
+  // {
+  //   to: "/octa",
+  //   src: "/images/octa/octa-hero.webp",
+  //   layoutId: "octa",
+  //   name: "Octa",
+  //   skills: [
+  //     "Branding",
+  //     "Packaging Design",
+  //     "Trade Show Booth Design",
+  //     "Web Design",
+  //     "Marketing Materials",
+  //   ],
+  // },
 ];
 
 export const codeExamples = [
@@ -359,6 +360,7 @@ export const App = () => {
           )}
         </VStack>
       </Container>
+      <NoiseBackground opacity={0.08} />
     </ChakraProvider>
   );
 };
